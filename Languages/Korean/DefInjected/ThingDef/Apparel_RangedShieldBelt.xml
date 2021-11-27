@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Apparel_T1RangedShieldBelt.label>T1 원거리 보호막 벨트</Apparel_T1RangedShieldBelt.label>
+  <Apparel_T1RangedShieldBelt.description>원시적인 사격 탄환출입 계산 시스템의 탑재로 원거리 무기를 사용하면서 동시에 보호막을 사용할 수 있습니다. 
+그 댓가로 중량이 무거워지고 충분한 전력을 공급하지 못하게 되어 충전속도가 열화되었습니다. 하지만 그 유용성은 사라지지 않았습니다.
+피격시 재충전 대기시간 : 30초</Apparel_T1RangedShieldBelt.description>
+
+  <Apparel_T2RangedShieldBelt.label>T2 원거리 보호막 벨트</Apparel_T2RangedShieldBelt.label>
+  <Apparel_T2RangedShieldBelt.description>초기 버전보다 향상된 성능을 가진 보호막 벨트입니다. 
+기술의 발전에 따라 계산장치가 소형화,고속화되었고 더 고출력의 보호막 발생장치와 축전지를 사용할 수 있게 되었습니다.
+피격시 재충전 대기시간 : 25초</Apparel_T2RangedShieldBelt.description>
+
+  <Apparel_T3RangedShieldBelt.label>T3 원거리 보호막 벨트</Apparel_T3RangedShieldBelt.label>
+  <Apparel_T3RangedShieldBelt.description>번화계 수준의 기술로 제작된 원거리 보호막 벨트로 어떠한 상황에서도 착용자에게 충분한 수준의 보호를 제공합니다.
+피격시 재충전 대기시간 : 20초</Apparel_T3RangedShieldBelt.description>
+  
+  <Apparel_T3FastRangedShieldBelt.label>T3F 원거리 보호막 벨트</Apparel_T3FastRangedShieldBelt.label>
+  <Apparel_T3FastRangedShieldBelt.description>번화계 수준의 기술로 제작된 원거리 보호막 벨트의 저용량 고속충전 버전으로, 공격과 엄폐를 반복하거나 장기적인 전투에 적합합니다.
+파괴시 재충전 대기시간 : 20초
+피격시 재충전 대기시간 : 15초</Apparel_T3FastRangedShieldBelt.description>
+</LanguageData>
