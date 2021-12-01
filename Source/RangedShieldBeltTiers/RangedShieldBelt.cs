@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -15,16 +16,18 @@ namespace RangedShieldBeltTiers
     public int ticksToReset = -1;
     private int lastKeepDisplayTick = -9999;
     private Vector3 impactAngleVect;
+    private float impactAngle;
     private int lastAbsorbDamageTick = -9999;
-    private const float MinDrawSize = 1.2f;
+    private const float MinDrawSize = 1.55f;
     private const float MaxDrawSize = 1.55f;
     private const float MaxDamagedJitterDist = 0.05f;
-    private const int JitterDurationTicks = 8;
+    private const int JitterDurationTicks = 50; 
     private float EnergyOnReset = 0.01f;
     private float EnergyLossPerDamage = 0.01f;
     private int KeepDisplayingTicks = 1000;
     private float ApparelScorePerEnergyMax = 0.25f;
-    private static readonly Material BubbleMat = MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
+    private Material BubbleMat = null;
+    private Material BubbleMatAngle = null;
 
     public int HitRechargeCooldown => (def as RangedShieldDef).HitRechargeCooldown;
     public int BrokenRechargeCooldown => (def as RangedShieldDef).BrokenRechargeCooldown;
@@ -119,13 +122,14 @@ namespace RangedShieldBeltTiers
     private void AbsorbedDamage(DamageInfo dinfo)
     {
       SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot((SoundInfo) new TargetInfo(Wearer.Position, Wearer.Map));
+      impactAngle = dinfo.Angle;
       impactAngleVect = Vector3Utility.HorizontalVectorFromAngle(dinfo.Angle);
       Vector3 loc = Wearer.TrueCenter() + impactAngleVect.RotatedBy(180f) * 0.5f;
       float scale = Mathf.Min(10f, (float) (2.0 + (double) dinfo.Amount / 10.0));
       FleckMaker.Static(loc, Wearer.Map, FleckDefOf.ExplosionFlash, scale);
       int num = (int) scale;
       for (int index = 0; index < num; ++index)
-        FleckMaker.ThrowDustPuff(loc, Wearer.Map, Rand.Range(0.8f, 1.2f));
+        // FleckMaker.ThrowDustPuff(loc, Wearer.Map, Rand.Range(0.8f, 1.2f));
       lastAbsorbDamageTick = Find.TickManager.TicksGame;
       ticksToRecharge = HitRechargeCooldown;//
       KeepDisplaying();
@@ -160,20 +164,29 @@ namespace RangedShieldBeltTiers
     {
       if (ShieldState != ShieldState.Active || !ShouldDisplay)
         return;
-      float num1 = Mathf.Lerp(MinDrawSize, MaxDrawSize, energy);
+      if(BubbleMat == null) BubbleMat = new Material(MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent));
+      if (BubbleMatAngle == null) BubbleMatAngle = new Material(MaterialPool.MatFrom("ShieldBubbleAngle", ShaderDatabase.Transparent));
+      
+      // float num1 = Mathf.Lerp(MinDrawSize, MaxDrawSize, energy);
       Vector3 drawPos = Wearer.Drawer.DrawPos;
       drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+      Vector3 s = new Vector3(MaxDrawSize, 1f, MaxDrawSize);
+      
+      //shield effect
       int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
-      if (num2 < 8)
+      if (num2 < JitterDurationTicks)
       {
-        float num3 = (float) ((double) (8 - num2) / 8.0 * 0.0500000007450581);
-        drawPos += impactAngleVect * num3;
-        num1 -= num3;
+        float intensity = (JitterDurationTicks - num2) / (float) JitterDurationTicks;
+        BubbleMatAngle.color = new Color(1, 1, 1, intensity);
+        Matrix4x4 matrix2 = new Matrix4x4();
+        matrix2.SetTRS(drawPos, Quaternion.AngleAxis(impactAngle,Vector3.up), s);
+        Graphics.DrawMesh(MeshPool.plane10,matrix2,BubbleMatAngle,0);
       }
-      float angle = (float) Rand.Range(0, 360);
-      Vector3 s = new Vector3(num1, 1f, num1);
+      
+      float angle = Rand.Range(0, 360);
       Matrix4x4 matrix = new Matrix4x4();
       matrix.SetTRS(drawPos, Quaternion.AngleAxis(angle, Vector3.up), s);
+      BubbleMat.color = new Color(1,1,1,Mathf.Lerp(0.3F,1,energy/EnergyMax));
       Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
     }
 
