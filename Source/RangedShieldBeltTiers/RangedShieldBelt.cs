@@ -28,6 +28,14 @@ namespace RangedShieldBeltTiers
     private float ApparelScorePerEnergyMax = 0.25f;
     private Material BubbleMat = null;
     private Material BubbleMatAngle = null;
+    private Material EmptyShieldBar = null;
+    private Material FullShieldBar = null;
+
+    // private readonly Material EmptyShieldBar =
+    //   MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
+    //
+    // private readonly Material FullShieldBar =
+    //   MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
 
     public int HitRechargeCooldown => (def as RangedShieldDef).HitRechargeCooldown;
     public int BrokenRechargeCooldown => (def as RangedShieldDef).BrokenRechargeCooldown;
@@ -164,15 +172,25 @@ namespace RangedShieldBeltTiers
     {
       if (ShieldState != ShieldState.Active || !ShouldDisplay)
         return;
+      //initialize material
       if(BubbleMat == null) BubbleMat = new Material(MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent));
       if (BubbleMatAngle == null) BubbleMatAngle = new Material(MaterialPool.MatFrom("ShieldBubbleAngle", ShaderDatabase.Transparent));
+      if (EmptyShieldBar == null)
+      {
+        EmptyShieldBar = new Material(MaterialPool.MatFrom("EmptyShieldBar", ShaderDatabase.Transparent));
+        EmptyShieldBar.color = new Color(1, 1, 1, 0.7F);
+      }
+      if (FullShieldBar == null)
+      {
+        FullShieldBar = new Material(MaterialPool.MatFrom("FullShieldBar", ShaderDatabase.Transparent));
+        FullShieldBar.color = new Color(1, 1, 1, 0.7F);
+      }
       
-      // float num1 = Mathf.Lerp(MinDrawSize, MaxDrawSize, energy);
       Vector3 drawPos = Wearer.Drawer.DrawPos;
       drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();
       Vector3 s = new Vector3(MaxDrawSize, 1f, MaxDrawSize);
       
-      //shield effect
+      //draw shield hit effect
       int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
       if (num2 < JitterDurationTicks)
       {
@@ -182,12 +200,27 @@ namespace RangedShieldBeltTiers
         matrix2.SetTRS(drawPos, Quaternion.AngleAxis(impactAngle,Vector3.up), s);
         Graphics.DrawMesh(MeshPool.plane10,matrix2,BubbleMatAngle,0);
       }
+
+      float leftEnergyPercent = energy / EnergyMax;
       
+      //draw shield bubble
       float angle = Rand.Range(0, 360);
       Matrix4x4 matrix = new Matrix4x4();
       matrix.SetTRS(drawPos, Quaternion.AngleAxis(angle, Vector3.up), s);
-      BubbleMat.color = new Color(1,1,1,Mathf.Lerp(0.3F,1,energy/EnergyMax));
+      BubbleMat.color = new Color(1,1,1,Mathf.Lerp(0.3F,1,leftEnergyPercent));
       Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
+      
+      //draw shield UI
+      Matrix4x4 shieldUIMatrix = new Matrix4x4();
+      Vector3 shieldUiSize = new Vector3(1f, 0,0.1f);
+      shieldUIMatrix.SetTRS(drawPos+new Vector3(0,0,0.85f), Quaternion.AngleAxis(0, Vector3.up), shieldUiSize);
+      Graphics.DrawMesh(MeshPool.plane10,shieldUIMatrix,EmptyShieldBar,0);
+      
+      Matrix4x4 shieldFullUIMatrix = new Matrix4x4();
+      Vector3 shieldFullUiSize = new Vector3(leftEnergyPercent*0.96F, 0, 0.07f);
+      shieldFullUIMatrix.SetTRS(drawPos+new Vector3(-(1-leftEnergyPercent)*0.48F,0.1f,0.85f), Quaternion.AngleAxis(0, Vector3.up), shieldFullUiSize);
+      Graphics.DrawMesh(MeshPool.plane10,shieldFullUIMatrix,FullShieldBar,0);
+      
     }
 
     public override bool AllowVerbCast(Verb verb) => true;
