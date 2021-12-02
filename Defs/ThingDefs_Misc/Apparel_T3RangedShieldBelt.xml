@@ -30,7 +30,7 @@
       <ComponentSpacer>10</ComponentSpacer>
       <Plasteel>150</Plasteel>
       <Uranium>80</Uranium>
-      <BroadshieldCore>1</BroadshieldCore>
+      <BroadshieldCore MayRequire="ludeon.rimworld.royalty">1</BroadshieldCore>
     </costList>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
