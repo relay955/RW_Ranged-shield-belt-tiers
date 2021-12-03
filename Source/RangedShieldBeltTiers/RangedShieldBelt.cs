@@ -31,14 +31,8 @@ namespace RangedShieldBeltTiers
     private Material EmptyShieldBar = null;
     private Material FullShieldBar = null;
 
-    // private readonly Material EmptyShieldBar =
-    //   MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
-    //
-    // private readonly Material FullShieldBar =
-    //   MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent);
-
-    public int HitRechargeCooldown => (def as RangedShieldDef).HitRechargeCooldown;
-    public int BrokenRechargeCooldown => (def as RangedShieldDef).BrokenRechargeCooldown;
+    public int HitRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("HitRechargeCooldown"))*60);
+    public int BrokenRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("BrokenRechargeCooldown"))*60);
     
     private float EnergyMax => this.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
     private float EnergyGainPerTick => this.GetStatValue(StatDefOf.EnergyShieldRechargeRate) / 60f;
@@ -135,8 +129,8 @@ namespace RangedShieldBeltTiers
       Vector3 loc = Wearer.TrueCenter() + impactAngleVect.RotatedBy(180f) * 0.5f;
       float scale = Mathf.Min(10f, (float) (2.0 + (double) dinfo.Amount / 10.0));
       FleckMaker.Static(loc, Wearer.Map, FleckDefOf.ExplosionFlash, scale);
-      int num = (int) scale;
-      for (int index = 0; index < num; ++index)
+      // int num = (int) scale;
+      // for (int index = 0; index < num; ++index)
         // FleckMaker.ThrowDustPuff(loc, Wearer.Map, Rand.Range(0.8f, 1.2f));
       lastAbsorbDamageTick = Find.TickManager.TicksGame;
       ticksToRecharge = HitRechargeCooldown;//

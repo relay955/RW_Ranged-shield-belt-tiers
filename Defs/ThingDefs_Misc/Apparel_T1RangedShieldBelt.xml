@@ -12,8 +12,6 @@ In return, it was heavy and did not provide enough power, which degraded chargin
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-    <HitRechargeCooldown>1800</HitRechargeCooldown>
-    <BrokenRechargeCooldown>3200</BrokenRechargeCooldown>
 
     <statBases>
       <Mass>4</Mass>
@@ -21,6 +19,8 @@ In return, it was heavy and did not provide enough power, which degraded chargin
       <Flammability>0.4</Flammability>
       <EnergyShieldRechargeRate>0.0025</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>30</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <thingSetMakerTags>

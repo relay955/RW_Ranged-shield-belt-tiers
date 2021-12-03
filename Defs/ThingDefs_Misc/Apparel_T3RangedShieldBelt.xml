@@ -11,8 +11,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-    <HitRechargeCooldown>1200</HitRechargeCooldown>
-    <BrokenRechargeCooldown>3200</BrokenRechargeCooldown>
 
     <statBases>
       <Mass>4</Mass>
@@ -20,6 +18,8 @@
       <Flammability>0.4</Flammability>
       <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>20</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <thingSetMakerTags>

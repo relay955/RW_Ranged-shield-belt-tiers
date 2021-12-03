@@ -12,8 +12,6 @@ With the development of technology, the calculation system has been reduced in s
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-    <HitRechargeCooldown>1500</HitRechargeCooldown>
-    <BrokenRechargeCooldown>3200</BrokenRechargeCooldown>
 
     <statBases>
       <Mass>2.5</Mass>
@@ -21,6 +19,8 @@ With the development of technology, the calculation system has been reduced in s
       <Flammability>0.4</Flammability>
       <EnergyShieldRechargeRate>0.005</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>0.6</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>25</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <thingSetMakerTags>
