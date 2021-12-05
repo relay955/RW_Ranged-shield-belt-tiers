@@ -14,4 +14,10 @@
     <RechargeWaitTimeOnHitDescription>Set global recharge wait time on hit. default is 1. The lower the value, the shorter the waiting time.</RechargeWaitTimeOnHitDescription>
     <RechargeWaitTimeOnBroken>Global recharge wait time on broken : {0}x</RechargeWaitTimeOnBroken>
     <RechargeWaitTimeOnBrokenDescription> set global recharge wait time on broken. default is 1. The lower the value, the shorter the waiting time.</RechargeWaitTimeOnBrokenDescription>
+    <ShieldEffect>Shield effect</ShieldEffect>
+    <ShieldEffectDescription>Set the appearance of the shield. Restart the game for take effect.</ShieldEffectDescription>
+    <RoyaltyShield>Royalty shield</RoyaltyShield>
+    <RoyaltyShieldDescription>Royalty style shield effect. (like broad shield hit effect)</RoyaltyShieldDescription>
+    <HexagonShield>Hexagon shield</HexagonShield>
+    <HexagonShieldDescription>Hexagon tile shield effect.</HexagonShieldDescription>
 </LanguageData>

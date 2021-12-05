@@ -127,9 +127,6 @@ namespace RangedShieldBeltTiers
       Vector3 loc = Wearer.TrueCenter() + impactAngleVect.RotatedBy(180f) * 0.5f;
       float scale = Mathf.Min(10f, (float) (2.0 + (double) dinfo.Amount / 10.0));
       FleckMaker.Static(loc, Wearer.Map, FleckDefOf.ExplosionFlash, scale);
-      // int num = (int) scale;
-      // for (int index = 0; index < num; ++index)
-        // FleckMaker.ThrowDustPuff(loc, Wearer.Map, Rand.Range(0.8f, 1.2f));
       lastAbsorbDamageTick = Find.TickManager.TicksGame;
       ticksToRecharge = HitRechargeCooldown;//
       KeepDisplaying();
@@ -165,8 +162,20 @@ namespace RangedShieldBeltTiers
       if (ShieldState != ShieldState.Active || !ShouldDisplay)
         return;
       //initialize material
-      if(BubbleMat == null) BubbleMat = new Material(MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent));
-      if (BubbleMatAngle == null) BubbleMatAngle = new Material(MaterialPool.MatFrom("ShieldBubbleAngle", ShaderDatabase.Transparent));
+      if (BubbleMat == null)
+      {
+        if (RangedShieldBeltConfig.shieldEffect == ShieldEffect.Default)
+          BubbleMat = new Material(MaterialPool.MatFrom("Other/ShieldBubble", ShaderDatabase.Transparent));
+        else if(RangedShieldBeltConfig.shieldEffect == ShieldEffect.Hexagon)
+          BubbleMat = new Material(MaterialPool.MatFrom("HexagonShield", ShaderDatabase.Transparent));
+      }
+      if (BubbleMatAngle == null)
+      {
+        if (RangedShieldBeltConfig.shieldEffect == ShieldEffect.Default)
+          BubbleMatAngle = new Material(MaterialPool.MatFrom("ShieldBubbleAngle", ShaderDatabase.Transparent));
+        else if (RangedShieldBeltConfig.shieldEffect == ShieldEffect.Hexagon)
+          BubbleMatAngle = new Material(MaterialPool.MatFrom("HexagonShieldAngle", ShaderDatabase.Transparent));
+      }
       if (EmptyShieldBar == null)
       {
         EmptyShieldBar = new Material(MaterialPool.MatFrom("EmptyShieldBar", ShaderDatabase.Transparent));
@@ -198,7 +207,8 @@ namespace RangedShieldBeltTiers
       //draw shield bubble
       if (!RangedShieldBeltConfig.showShieldHitEffectOnly)
       {
-        float angle = Rand.Range(0, 360);
+        float angle = 0;
+        if(RangedShieldBeltConfig.shieldEffect == ShieldEffect.Default) angle = Rand.Range(0, 360);
         Matrix4x4 matrix = new Matrix4x4();
         matrix.SetTRS(drawPos, Quaternion.AngleAxis(angle, Vector3.up), s);
         BubbleMat.color = new Color(1, 1, 1, Mathf.Lerp(0.3F, 1, leftEnergyPercent));

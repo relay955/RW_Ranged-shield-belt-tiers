@@ -1,17 +1,24 @@
 ﻿using System;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace RangedShieldBeltTiers
 {
+    public enum ShieldEffect
+    {
+        Default,
+        Hexagon
+    }
     public class RangedShieldBeltConfig : ModSettings
     {
-        public static bool showShieldHitEffectOnly = false;
+        public static bool showShieldHitEffectOnly = true;
         public static bool showTacticalShieldBar = true;
         public static float shieldCapacityMultiplier = 1;
         public static float shieldRechargeSpeedMultiplier = 1;
         public static float rechargeWaitTimeOnHit = 1;
         public static float rechargeWaitTimeOnBroken = 1;
+        public static ShieldEffect shieldEffect = ShieldEffect.Hexagon;
 
         public override void ExposeData()
         {
@@ -21,6 +28,7 @@ namespace RangedShieldBeltTiers
             Scribe_Values.Look(ref shieldRechargeSpeedMultiplier, "shieldRechargeSpeedMultiplier");
             Scribe_Values.Look(ref rechargeWaitTimeOnHit, "rechargeWaitTimeOnHit");
             Scribe_Values.Look(ref rechargeWaitTimeOnBroken, "rechargeWaitTimeOnBroken");
+            Scribe_Values.Look(ref shieldEffect, "shieldEffect");
             base.ExposeData();
         }
     }
@@ -63,7 +71,14 @@ namespace RangedShieldBeltTiers
             RangedShieldBeltConfig.rechargeWaitTimeOnBroken = Mathf.Floor(listingStandard.Slider(RangedShieldBeltConfig.rechargeWaitTimeOnBroken, 0.2F,3)*10)/10;
             
             listingStandard.Gap();
-            // listingStandard.Label("실드이펙트 설정",-1F,"실드 이펙트입니다.");
+            listingStandard.Label("ShieldEffect".Translate(),-1F,"ShieldEffectDescription".Translate()); 
+            bool defaultShieldEffect = listingStandard.RadioButton("RoyaltyShield".Translate(), RangedShieldBeltConfig.shieldEffect == ShieldEffect.Default, 0F,
+                "RoyaltyShieldDescription".Translate());
+            bool hexagonShieldEffect = listingStandard.RadioButton("HexagonShield".Translate(), RangedShieldBeltConfig.shieldEffect == ShieldEffect.Hexagon, 0F,
+                "HexagonShieldDescription".Translate());
+            if (defaultShieldEffect) RangedShieldBeltConfig.shieldEffect = ShieldEffect.Default;
+            else if (hexagonShieldEffect) RangedShieldBeltConfig.shieldEffect = ShieldEffect.Hexagon;
+            
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
