@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ShowShieldHitEffectOnly>Show shield hit effect only</ShowShieldHitEffectOnly>
+    <ShowShieldHitEffectOnlyDescription>shield is not displayed on draft, shield hit effect is displayed only when being attacked Like in other games. </ShowShieldHitEffectOnlyDescription>
+    <ShowTacticalShieldBar>Show tactical shield bar</ShowTacticalShieldBar>
+    <ShowTacticalShieldBarDescription>show current shield capacity UI above each pawn's head.</ShowTacticalShieldBarDescription>
+    <BalanceSettings>Balance Settings</BalanceSettings>
+    <BalanceSettingsDescription>The performance and price of the shield were designed with balance in mind. However, many may disagree with this. If you want to make the game more difficult or easier, please adjust the multiplier below.</BalanceSettingsDescription>
+    <ShieldCapacityMultiplier>Global shield capacity multiplier : {0}x</ShieldCapacityMultiplier>
+    <ShieldCapacityMultiplierDescription>Set global shield capacity multiplier. default is 1.</ShieldCapacityMultiplierDescription>
+    <ShieldRechargeSpeedMultiplier>Global shield recharge speed multiplier : {0}x</ShieldRechargeSpeedMultiplier>
+    <ShieldRechargeSpeedMultiplierDescription>Set global shield recharge speed. default is 1.</ShieldRechargeSpeedMultiplierDescription>
+    <RechargeWaitTimeOnHit>Global recharge wait time on hit : {0}x</RechargeWaitTimeOnHit>
+    <RechargeWaitTimeOnHitDescription>Set global recharge wait time on hit. default is 1. The lower the value, the shorter the waiting time.</RechargeWaitTimeOnHitDescription>
+    <RechargeWaitTimeOnBroken>Global recharge wait time on broken : {0}x</RechargeWaitTimeOnBroken>
+    <RechargeWaitTimeOnBrokenDescription> set global recharge wait time on broken. default is 1. The lower the value, the shorter the waiting time.</RechargeWaitTimeOnBrokenDescription>
+</LanguageData>

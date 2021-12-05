@@ -61,6 +61,7 @@
         <Compile Include="Gizmo_EnergyShieldStatus.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="RangedShieldBelt.cs" />
+        <Compile Include="RangedShieldBeltConfig.cs" />
         <Compile Include="RangedShieldDef.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

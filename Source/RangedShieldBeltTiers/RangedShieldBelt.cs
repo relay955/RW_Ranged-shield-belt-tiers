@@ -31,11 +31,11 @@ namespace RangedShieldBeltTiers
     private Material EmptyShieldBar = null;
     private Material FullShieldBar = null;
 
-    public int HitRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("HitRechargeCooldown"))*60);
-    public int BrokenRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("BrokenRechargeCooldown"))*60);
+    public int HitRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("HitRechargeCooldown"))*60*RangedShieldBeltConfig.rechargeWaitTimeOnHit);
+    public int BrokenRechargeCooldown => (int) (this.GetStatValue(StatDef.Named("BrokenRechargeCooldown"))*60*RangedShieldBeltConfig.rechargeWaitTimeOnBroken);
     
-    private float EnergyMax => this.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
-    private float EnergyGainPerTick => this.GetStatValue(StatDefOf.EnergyShieldRechargeRate) / 60f;
+    public float EnergyMax => this.GetStatValue(StatDefOf.EnergyShieldEnergyMax)*RangedShieldBeltConfig.shieldCapacityMultiplier;
+    private float EnergyGainPerTick => this.GetStatValue(StatDefOf.EnergyShieldRechargeRate) / 60f *RangedShieldBeltConfig.shieldRechargeSpeedMultiplier;
     public float Energy => energy;
     public ShieldState ShieldState => ticksToReset > 0 ? ShieldState.Resetting : ShieldState.Active;
 
@@ -43,7 +43,7 @@ namespace RangedShieldBeltTiers
     {
       get
       {
-        Pawn wearer = this.Wearer;
+        Pawn wearer = Wearer;
         return wearer.Spawned &&
                !wearer.Dead && 
                !wearer.Downed && (
@@ -69,7 +69,6 @@ namespace RangedShieldBeltTiers
       {
         yield return gizmo;
       }
-      IEnumerator<Gizmo> enumerator = null;
       if (Find.Selector.SingleSelectedThing == Wearer)
       {
         yield return new Gizmo_EnergyShieldStatus { shield = this };
@@ -88,13 +87,12 @@ namespace RangedShieldBeltTiers
         if (ticksToReset > 0) return;
         Reset();
       }
+      else if (ticksToRecharge >= 0)
+      {
+          --ticksToRecharge;
+      }
       else
       {
-        if (ticksToRecharge >= 0)
-        {
-          --ticksToRecharge;
-          return;
-        }
         if (ShieldState != ShieldState.Active) return;
         energy += EnergyGainPerTick;
         if ((double) energy <= (double) EnergyMax) return;
@@ -198,23 +196,29 @@ namespace RangedShieldBeltTiers
       float leftEnergyPercent = energy / EnergyMax;
       
       //draw shield bubble
-      float angle = Rand.Range(0, 360);
-      Matrix4x4 matrix = new Matrix4x4();
-      matrix.SetTRS(drawPos, Quaternion.AngleAxis(angle, Vector3.up), s);
-      BubbleMat.color = new Color(1,1,1,Mathf.Lerp(0.3F,1,leftEnergyPercent));
-      Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
-      
+      if (!RangedShieldBeltConfig.showShieldHitEffectOnly)
+      {
+        float angle = Rand.Range(0, 360);
+        Matrix4x4 matrix = new Matrix4x4();
+        matrix.SetTRS(drawPos, Quaternion.AngleAxis(angle, Vector3.up), s);
+        BubbleMat.color = new Color(1, 1, 1, Mathf.Lerp(0.3F, 1, leftEnergyPercent));
+        Graphics.DrawMesh(MeshPool.plane10, matrix, BubbleMat, 0);
+      }
+
       //draw shield UI
-      Matrix4x4 shieldUIMatrix = new Matrix4x4();
-      Vector3 shieldUiSize = new Vector3(1f, 0,0.1f);
-      shieldUIMatrix.SetTRS(drawPos+new Vector3(0,0,0.85f), Quaternion.AngleAxis(0, Vector3.up), shieldUiSize);
-      Graphics.DrawMesh(MeshPool.plane10,shieldUIMatrix,EmptyShieldBar,0);
-      
-      Matrix4x4 shieldFullUIMatrix = new Matrix4x4();
-      Vector3 shieldFullUiSize = new Vector3(leftEnergyPercent*0.96F, 0, 0.07f);
-      shieldFullUIMatrix.SetTRS(drawPos+new Vector3(-(1-leftEnergyPercent)*0.48F,0.1f,0.85f), Quaternion.AngleAxis(0, Vector3.up), shieldFullUiSize);
-      Graphics.DrawMesh(MeshPool.plane10,shieldFullUIMatrix,FullShieldBar,0);
-      
+      if (RangedShieldBeltConfig.showTacticalShieldBar)
+      {
+        Matrix4x4 shieldUIMatrix = new Matrix4x4();
+        Vector3 shieldUiSize = new Vector3(1f, 0, 0.1f);
+        shieldUIMatrix.SetTRS(drawPos + new Vector3(0, 0, 0.85f), Quaternion.AngleAxis(0, Vector3.up), shieldUiSize);
+        Graphics.DrawMesh(MeshPool.plane10, shieldUIMatrix, EmptyShieldBar, 0);
+
+        Matrix4x4 shieldFullUIMatrix = new Matrix4x4();
+        Vector3 shieldFullUiSize = new Vector3(leftEnergyPercent * 0.96F, 0, 0.07f);
+        shieldFullUIMatrix.SetTRS(drawPos + new Vector3(-(1 - leftEnergyPercent) * 0.48F, 0.1f, 0.85f),
+          Quaternion.AngleAxis(0, Vector3.up), shieldFullUiSize);
+        Graphics.DrawMesh(MeshPool.plane10, shieldFullUIMatrix, FullShieldBar, 0);
+      }
     }
 
     public override bool AllowVerbCast(Verb verb) => true;

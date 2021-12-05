@@ -32,15 +32,13 @@ namespace RangedShieldBeltTiers
             Widgets.Label(rect3, this.shield.LabelCap);
             Rect rect4 = rect2;
             rect4.yMin = rect2.y + rect2.height / 2f;
-            float fillPercent = this.shield.Energy / this.shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
-            Widgets.FillableBar(rect4, fillPercent, Gizmo_EnergyShieldStatus.FullShieldBarTex, Gizmo_EnergyShieldStatus.EmptyShieldBarTex, false);
+            float fillPercent = this.shield.Energy / this.shield.EnergyMax;
+            Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, false);
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
             Rect rect5 = rect4;
-            float num = this.shield.Energy * 100f;
-            string str1 = num.ToString("F0");
-            num = this.shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax) * 100f;
-            string str2 = num.ToString("F0");
+            string str1 = (shield.Energy * 100f).ToString("F0");
+            string str2 = (shield.EnergyMax * 100f).ToString("F0");
 
             labelText.Clear();
             labelText.Append(str1);
