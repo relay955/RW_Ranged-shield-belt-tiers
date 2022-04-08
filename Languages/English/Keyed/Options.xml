@@ -20,4 +20,6 @@
     <RoyaltyShieldDescription>Royalty style shield effect. (like broad shield hit effect)</RoyaltyShieldDescription>
     <HexagonShield>Hexagon shield</HexagonShield>
     <HexagonShieldDescription>Hexagon tile shield effect.</HexagonShieldDescription>
+    <AffectMeleeDamage>protect against melee damage</AffectMeleeDamage>
+    <AffectMeleeDamageDescription>Set whether to protect against melee attacks.</AffectMeleeDamageDescription>
 </LanguageData>

@@ -14,6 +14,7 @@ namespace RangedShieldBeltTiers
     {
         public static bool showShieldHitEffectOnly = true;
         public static bool showTacticalShieldBar = true;
+        public static bool affectMeleeDamage = false;
         public static float shieldCapacityMultiplier = 1;
         public static float shieldRechargeSpeedMultiplier = 1;
         public static float rechargeWaitTimeOnHit = 1;
@@ -69,6 +70,9 @@ namespace RangedShieldBeltTiers
             listingStandard.Label("RechargeWaitTimeOnBroken".Translate(RangedShieldBeltConfig.rechargeWaitTimeOnBroken.ToString()),-1F,
                 "RechargeWaitTimeOnBrokenDescription".Translate());
             RangedShieldBeltConfig.rechargeWaitTimeOnBroken = Mathf.Floor(listingStandard.Slider(RangedShieldBeltConfig.rechargeWaitTimeOnBroken, 0.2F,3)*10)/10;
+            
+            listingStandard.CheckboxLabeled("AffectMeleeDamage".Translate(), ref RangedShieldBeltConfig.affectMeleeDamage,
+                "AffectMeleeDamageDescription".Translate());
             
             listingStandard.Gap();
             listingStandard.Label("ShieldEffect".Translate(),-1F,"ShieldEffectDescription".Translate()); 

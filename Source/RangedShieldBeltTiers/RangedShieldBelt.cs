@@ -21,7 +21,7 @@ namespace RangedShieldBeltTiers
     private const float MinDrawSize = 1.55f;
     private const float MaxDrawSize = 1.55f;
     private const float MaxDamagedJitterDist = 0.05f;
-    private const int JitterDurationTicks = 50; 
+    private const int JitterDurationTicks = 70; 
     private float EnergyOnReset = 0.01f;
     private float EnergyLossPerDamage = 0.01f;
     private int KeepDisplayingTicks = 1000;
@@ -109,7 +109,8 @@ namespace RangedShieldBeltTiers
         Break();
         return false;
       }
-      if (!dinfo.Def.isRanged && !dinfo.Def.isExplosive) return false;
+
+      if (!(RangedShieldBeltConfig.affectMeleeDamage  || dinfo.Def.isRanged) && !dinfo.Def.isExplosive) return false;
       energy -= dinfo.Amount * EnergyLossPerDamage;
       
       if ((double) energy < 0.0) Break();
