@@ -25,6 +25,7 @@ namespace RangedShieldBeltTiers
         {
             Scribe_Values.Look(ref showShieldHitEffectOnly, "showShieldHItEffectOnly");
             Scribe_Values.Look(ref showTacticalShieldBar, "showTacticalShieldBar");
+            Scribe_Values.Look(ref affectMeleeDamage, "affectMeleeDamage");
             Scribe_Values.Look(ref shieldCapacityMultiplier, "shieldCapacityMultiplier");
             Scribe_Values.Look(ref shieldRechargeSpeedMultiplier, "shieldRechargeSpeedMultiplier");
             Scribe_Values.Look(ref rechargeWaitTimeOnHit, "rechargeWaitTimeOnHit");
