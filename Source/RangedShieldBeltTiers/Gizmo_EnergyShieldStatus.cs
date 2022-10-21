@@ -14,7 +14,7 @@ namespace RangedShieldBeltTiers
         private static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
         private StringBuilder labelText = new StringBuilder();
 
-        public Gizmo_EnergyShieldStatus() => this.order = -100f;
+        public Gizmo_EnergyShieldStatus() => this.Order = -100f;
 
         public override float GetWidth(float maxWidth) => 140f;
 

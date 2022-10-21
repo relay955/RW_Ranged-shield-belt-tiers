@@ -4,3 +4,10 @@ D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Source\RangedSh
 D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\Ranged_Shield_Belt_Tiers.pdb
 D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Assemblies\Ranged_Shield_Belt_Tiers.dll
 D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Assemblies\Ranged_Shield_Belt_Tiers.pdb
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Assemblies\Ranged_Shield_Belt_Tiers.dll
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Assemblies\Ranged_Shield_Belt_Tiers.pdb
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\RangedShieldBeltTiers.csprojAssemblyReference.cache
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\RangedShieldBeltTiers.csproj.CoreCompileInputs.cache
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\Ranged_Shield_Belt_Tiers.dll
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\Ranged_Shield_Belt_Tiers.pdb
+D:\steam\steamapps\common\RimWorld\Ranged Shield Belt Tiers\Source\RangedShieldBeltTiers\obj\Debug\RangedShieldBeltTiers.csproj.CopyComplete
