@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>AdvancedRangedShieldBelt</defName>
+		<label>Advanced ranged shield belts</label>
+		<description>Produce the Advanced ranged shield belt.</description>
+		<baseCost>3200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>ShieldBelt</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>1.45</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>GlitertechRangedShieldBelt</defName>
+		<label>Glitertech ranged shield belts</label>
+		<description>Produce the Glitertech ranged shield belt.</description>
+		<baseCost>8000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedRangedShieldBelt</li>
+			<li>ShipComputerCore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>20.00</researchViewX>
+		<researchViewY>1.15</researchViewY>
+	</ResearchProjectDef>
+</Defs>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase" Class="RangedShieldBeltTiers.RangedShieldDef">
+    <defName>Apparel_T1RangedShieldBelt</defName>
+    <label>T1 Ranged shield belt</label>
+    <description>by primitive shooting bullet entry and exit calculation system, can use a shield while using a ranged weapon at the same time.
+In return, it was heavy and did not provide enough power, which degraded charging speed.</description>
+    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+
+    <statBases>
+      <Mass>4</Mass>
+      <WorkToMake>25000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.0025</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>30</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>30</Plasteel>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>true</careIfWornByCorpse>
+      <careIfDamaged>true</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+</Defs>
