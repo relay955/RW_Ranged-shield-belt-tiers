@@ -46,6 +46,12 @@ namespace RangedShieldBeltTiers
              RangedShieldBeltConfig.rechargeWaitTimeOnBroken);
     public int ChargeDurationPerBattery =>
       (int)this.GetStatValue(StatDef.Named("ChargeDurationPerBattery")) * 60;
+
+    public int EmpResist =>
+      (int)this.GetStatValue(StatDef.Named("EMPResist"));
+    
+    public int Reinforce =>
+      (int)this.GetStatValue(StatDef.Named("Reinforce"));
     
     public float EnergyMax => 
       this.GetStatValue(StatDefOf.EnergyShieldEnergyMax)*
@@ -133,19 +139,24 @@ namespace RangedShieldBeltTiers
       }
     }
 
-    public override bool CheckPreAbsorbDamage(DamageInfo dinfo)
-    {
+    public override bool CheckPreAbsorbDamage(DamageInfo dinfo) {
+      var damage = dinfo.Amount * EnergyLossPerDamage;
       if (ShieldState != ShieldState.Active) return false;
       if (dinfo.Def == DamageDefOf.EMP)
       {
-        energy = 0.0f;
-        Break();
-        return false;
+        if (EmpResist > 1) {
+          damage = EmpResist*EnergyLossPerDamage;
+        } else {
+          energy = 0.0f;
+          Break();
+          return false;
+        }
       }
 
       if (!(RangedShieldBeltConfig.affectMeleeDamage  || dinfo.Def.isRanged) &&
           !dinfo.Def.isExplosive) return false;
-      energy -= dinfo.Amount * EnergyLossPerDamage;
+      if (Reinforce > 1) damage = Math.Min(Reinforce*EnergyLossPerDamage, damage);
+      energy -= damage;
       
       if (energy < 0.0) Break();
       else AbsorbedDamage(dinfo);

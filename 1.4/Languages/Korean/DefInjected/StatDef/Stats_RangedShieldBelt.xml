@@ -11,4 +11,10 @@
   <ChargeDurationPerBattery.label>배터리당 충전가능시간</ChargeDurationPerBattery.label>
   <ChargeDurationPerBattery.description>보호막을 충전 가능한 배터리 당 시간입니다.</ChargeDurationPerBattery.description>
   <ChargeDurationPerBattery.formatString>{0}초</ChargeDurationPerBattery.formatString>
+
+  <EMPResist.label>EMP 저항</EMPResist.label>
+  <EMPResist.description>EMP 공격을 받을 때 해당 수치만큼의 피해만 입습니다.</EMPResist.description>
+
+  <Reinforce.label>보호막 강화</Reinforce.label>
+  <Reinforce.description>한번 공격을 받을 때 해당 수치 이상의 피해를 입지 않습니다.</Reinforce.description>
 </LanguageData>

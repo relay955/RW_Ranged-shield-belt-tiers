@@ -18,6 +18,12 @@
   <Apparel_T2SSRangedShieldBelt.label>T2 저격수 원거리 보호막 벨트</Apparel_T2SSRangedShieldBelt.label>
   <Apparel_T2SSRangedShieldBelt.description>저격수 모듈이 장착된 원거리 보호막 벨트입니다. 근거리 교전시에 불리합니다. 원거리무기를 사용하는 인원에게 적합합니다.</Apparel_T2SSRangedShieldBelt.description>
 
+  <Apparel_T2ERRangedShieldBelt.label>T2 EMP저항 원거리 보호막 벨트</Apparel_T2ERRangedShieldBelt.label>
+  <Apparel_T2ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다. EMP 아군 오사때문에 스트레스를 받고있을때 적합합니다.</Apparel_T2ERRangedShieldBelt.description>
+
+  <Apparel_T2RERangedShieldBelt.label>T2 강화 원거리 보호막 벨트</Apparel_T2RERangedShieldBelt.label>
+  <Apparel_T2RERangedShieldBelt.description>강화 모듈이 장착된 원거리 보호막 벨트입니다. 한번에 일정량 이상의 피해를 입지 않습니다. 전자기포와 같은 무기들을 상대할 때 유용합니다.</Apparel_T2RERangedShieldBelt.description>
+
   <Apparel_T2OCRangedShieldBelt.label>T2 오버클럭 원거리 보호막 벨트</Apparel_T2OCRangedShieldBelt.label>
   <Apparel_T2OCRangedShieldBelt.description>오버클럭 모듈이 장착된 원거리 보호막 벨트입니다. 보호막 용량과 회복속도가 대폭 향상되었지만 그 댓가로 배터리 효율이 크게 하락했습니다. 더 많은 비용을 지불해서라도 보호해야 하는 중요한 인원이거나, 정착지에 재산이 많을때 적합합니다.</Apparel_T2OCRangedShieldBelt.description>
 
@@ -38,4 +44,10 @@
 
   <Apparel_T3OCRangedShieldBelt.label>T3 오버클럭 원거리 보호막 벨트</Apparel_T3OCRangedShieldBelt.label>
   <Apparel_T3OCRangedShieldBelt.description>오버클럭 모듈이 장착된 원거리 보호막 벨트입니다. 보호막 용량과 회복속도가 대폭 향상되었지만 그 댓가로 배터리 효율이 크게 하락했습니다. 더 많은 비용을 지불해서라도 보호해야 하는 중요한 인원이거나, 정착지에 재산이 많을때 적합합니다.</Apparel_T3OCRangedShieldBelt.description>
+
+  <Apparel_T3ERRangedShieldBelt.label>T3 EMP저항 원거리 보호막 벨트</Apparel_T3ERRangedShieldBelt.label>
+  <Apparel_T3ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다. EMP 아군 오사때문에 스트레스를 받고있을때 적합합니다.</Apparel_T3ERRangedShieldBelt.description>
+
+  <Apparel_T3RERangedShieldBelt.label>T3 강화 원거리 보호막 벨트</Apparel_T3RERangedShieldBelt.label>
+  <Apparel_T3RERangedShieldBelt.description>강화 모듈이 장착된 원거리 보호막 벨트입니다. 한번에 일정량 이상의 피해를 입지 않습니다. 전자기포와 같은 무기들을 상대할 때 유용합니다.</Apparel_T3RERangedShieldBelt.description>
 </LanguageData>

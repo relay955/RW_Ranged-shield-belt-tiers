@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T3RangedShieldBelt">
+    <defName>Apparel_T3RERangedShieldBelt</defName>
+    <label>T3 Reinforced Ranged shield belt</label>
+    <description>Module equiped : [Reinforce]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.72</EnergyShieldEnergyMax>
+      <Reinforce>15</Reinforce>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+  </ThingDef>
+</Defs>

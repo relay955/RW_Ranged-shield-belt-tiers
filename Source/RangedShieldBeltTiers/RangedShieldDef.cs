@@ -10,5 +10,7 @@ namespace RangedShieldBeltTiers
         public int HitRechargeCooldown;
         public int BrokenRechargeCooldown;
         public int ChargeDurationPerBattery;
+        public int EMPResist;
+        public int Reinforce;
     }
 }
