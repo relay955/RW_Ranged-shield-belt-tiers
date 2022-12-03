@@ -24,8 +24,8 @@
     <recipeMaker>
       <recipeUsers>
         <li>FabricationBench</li>
-        <researchPrerequisite>GlitertechRangedShieldBelt</researchPrerequisite>
       </recipeUsers>
+      <researchPrerequisite>GlitertechRangedShieldBelt</researchPrerequisite>
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">

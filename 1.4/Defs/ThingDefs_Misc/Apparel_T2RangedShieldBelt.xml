@@ -26,8 +26,8 @@ With the development of technology, the calculation system has been reduced in s
     <recipeMaker>
       <recipeUsers>
         <li>FabricationBench</li>
-        <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
       </recipeUsers>
+      <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">
