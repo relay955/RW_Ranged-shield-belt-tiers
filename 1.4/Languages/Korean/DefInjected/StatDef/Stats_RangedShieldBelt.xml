@@ -5,6 +5,10 @@
   <HitRechargeCooldown.formatString>{0}초</HitRechargeCooldown.formatString>
 
   <BrokenRechargeCooldown.label>파괴시 재충전 대기시간</BrokenRechargeCooldown.label>
-  <BrokenRechargeCooldown.description>실드가 파괴된 후 재충전이 시작될 때 까지의 대기시간입니다.</BrokenRechargeCooldown.description>
+  <BrokenRechargeCooldown.description>보호막이 파괴된 후 재충전이 시작될 때 까지의 대기시간입니다.</BrokenRechargeCooldown.description>
   <BrokenRechargeCooldown.formatString>{0}초</BrokenRechargeCooldown.formatString>
+
+  <ChargeDurationPerBattery.label>배터리당 충전가능시간</ChargeDurationPerBattery.label>
+  <ChargeDurationPerBattery.description>보호막을 충전 가능한 배터리 당 시간입니다.</ChargeDurationPerBattery.description>
+  <ChargeDurationPerBattery.formatString>{0}초</ChargeDurationPerBattery.formatString>
 </LanguageData>

@@ -1,55 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="ApparelBase" Class="RangedShieldBeltTiers.RangedShieldDef">
-    <defName>Apparel_T3FastRangedShieldBelt</defName>
-    <label>T3F Ranged shield belt</label>
-    <description>A low-capacity, fast-charging version of the Ranged shield belt crafted with Gliterworld technology, ideal for repeated attacks and cover, or for long-term combat.</description>
-    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
+  <ThingDef Abstract="True" Name="RangedShieldBeltBase" ParentName="ApparelBase" Class="RangedShieldBeltTiers.RangedShieldDef">
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
+    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
 
     <statBases>
-      <Mass>4</Mass>
-      <WorkToMake>50000</WorkToMake>
       <Flammability>0.4</Flammability>
-      <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>0.6</EnergyShieldEnergyMax>
-      <HitRechargeCooldown>15</HitRechargeCooldown>
-      <BrokenRechargeCooldown>20</BrokenRechargeCooldown>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-    <costList>
-      <ComponentSpacer>10</ComponentSpacer>
-      <Plasteel>150</Plasteel>
-      <Uranium>80</Uranium>
-      <BroadshieldCore MayRequire="ludeon.rimworld.royalty">1</BroadshieldCore>
-    </costList>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>GlitertechRangedShieldBelt</researchPrerequisite>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <skillRequirements>
-        <Crafting>12</Crafting>
+        <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
+
     <apparel>
 	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <careIfWornByCorpse>true</careIfWornByCorpse>

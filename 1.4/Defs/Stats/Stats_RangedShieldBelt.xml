@@ -46,5 +46,29 @@
         </parts>
     </StatDef>
 
+    <StatDef>
+        <defName>ChargeDurationPerBattery</defName>
+        <label>Charge duration per battery</label>
+        <description>chargable duration per battery.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>FloatMaxOne</toStringStyle>
+        <formatString>{0}s</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>69</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.00</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>1.00</factorExcellent>
+                <factorMasterwork>1.00</factorMasterwork>
+                <factorLegendary>1.00</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+
 
 </Defs>

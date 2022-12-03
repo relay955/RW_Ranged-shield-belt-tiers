@@ -23,14 +23,22 @@ namespace RangedShieldBeltTiers
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref showShieldHitEffectOnly, "showShieldHItEffectOnly");
-            Scribe_Values.Look(ref showTacticalShieldBar, "showTacticalShieldBar");
-            Scribe_Values.Look(ref affectMeleeDamage, "affectMeleeDamage");
-            Scribe_Values.Look(ref shieldCapacityMultiplier, "shieldCapacityMultiplier");
-            Scribe_Values.Look(ref shieldRechargeSpeedMultiplier, "shieldRechargeSpeedMultiplier");
-            Scribe_Values.Look(ref rechargeWaitTimeOnHit, "rechargeWaitTimeOnHit");
-            Scribe_Values.Look(ref rechargeWaitTimeOnBroken, "rechargeWaitTimeOnBroken");
-            Scribe_Values.Look(ref shieldEffect, "shieldEffect");
+            Scribe_Values.Look(ref showShieldHitEffectOnly,
+                "showShieldHItEffectOnly");
+            Scribe_Values.Look(ref showTacticalShieldBar,
+                "showTacticalShieldBar");
+            Scribe_Values.Look(ref affectMeleeDamage, 
+                "affectMeleeDamage");
+            Scribe_Values.Look(ref shieldCapacityMultiplier, 
+                "shieldCapacityMultiplier");
+            Scribe_Values.Look(ref shieldRechargeSpeedMultiplier,
+                "shieldRechargeSpeedMultiplier");
+            Scribe_Values.Look(ref rechargeWaitTimeOnHit, 
+                "rechargeWaitTimeOnHit");
+            Scribe_Values.Look(ref rechargeWaitTimeOnBroken,
+                "rechargeWaitTimeOnBroken");
+            Scribe_Values.Look(ref shieldEffect,
+                "shieldEffect");
             base.ExposeData();
         }
     }
@@ -49,16 +57,30 @@ namespace RangedShieldBeltTiers
             base.DoSettingsWindowContents(inRect);
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.CheckboxLabeled("ShowShieldHitEffectOnly".Translate(), ref RangedShieldBeltConfig.showShieldHitEffectOnly,
-                "ShowShieldHitEffectOnlyDescription".Translate());
-            listingStandard.CheckboxLabeled("ShowTacticalShieldBar".Translate(), ref RangedShieldBeltConfig.showTacticalShieldBar,
-                "ShowTacticalShieldBarDescription".Translate());
+            listingStandard.CheckboxLabeled(
+                "ShowShieldHitEffectOnly".Translate(),
+                ref RangedShieldBeltConfig.showShieldHitEffectOnly,
+                "ShowShieldHitEffectOnlyDescription".Translate()
+            );
+            listingStandard.CheckboxLabeled(
+                "ShowTacticalShieldBar".Translate(),
+                ref RangedShieldBeltConfig.showTacticalShieldBar,
+                "ShowTacticalShieldBarDescription".Translate()
+            );
             listingStandard.Gap();
             
-            listingStandard.Label("BalanceSettings".Translate(),-1F,"BalanceSettingsDescription".Translate());
-            listingStandard.Label("ShieldCapacityMultiplier".Translate(RangedShieldBeltConfig.shieldCapacityMultiplier.ToString()),-1F,
+            listingStandard.Label("BalanceSettings".Translate(), -1F,
+                "BalanceSettingsDescription".Translate());
+            listingStandard.Label("ShieldCapacityMultiplier".Translate(
+                    RangedShieldBeltConfig.
+                        shieldCapacityMultiplier.ToString()),
+                -1F,
                 "ShieldCapacityMultiplierDescription".Translate());
-            RangedShieldBeltConfig.shieldCapacityMultiplier = Mathf.Floor(listingStandard.Slider(RangedShieldBeltConfig.shieldCapacityMultiplier, 0.5F,5)*10)/10;
+            RangedShieldBeltConfig.shieldCapacityMultiplier = Mathf.Floor(
+                listingStandard.Slider(
+                    RangedShieldBeltConfig.shieldCapacityMultiplier,
+                    0.5F,5)*10
+                )/10;
             
             listingStandard.Label("ShieldRechargeSpeedMultiplier".Translate(RangedShieldBeltConfig.shieldRechargeSpeedMultiplier.ToString()),-1F,
                 "ShieldRechargeSpeedMultiplierDescription".Translate());

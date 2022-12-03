@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="RangedShieldBeltBase" >
-    <defName>Apparel_T3RangedShieldBelt</defName>
-    <label>T3 Ranged shield belt</label>
-    <description>Ranged shield belt crafted with Gliterworld technology, it provides a sufficient level of protection for the wearer in any situation.</description>
+  <ThingDef ParentName="RangedShieldBeltBase">
+    <defName>Apparel_T3FastRangedShieldBelt</defName>
+    <label>T3F Ranged shield belt</label>
+    <description>A low-capacity, fast-charging version of the Ranged shield belt crafted with Gliterworld technology, ideal for repeated attacks and cover, or for long-term combat.</description>
     <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
 
     <statBases>
       <Mass>3</Mass>
       <WorkToMake>50000</WorkToMake>
-      <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
-      <HitRechargeCooldown>20</HitRechargeCooldown>
-      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
+      <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>8</HitRechargeCooldown>
+      <BrokenRechargeCooldown>15</BrokenRechargeCooldown>
       <ChargeDurationPerBattery>240</ChargeDurationPerBattery>
     </statBases>
     <costList>
