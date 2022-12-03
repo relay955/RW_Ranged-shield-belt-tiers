@@ -17,7 +17,7 @@
       <ChargeDurationPerBattery>48</ChargeDurationPerBattery>
     </statBases>
     <costList>
-      <ComponentSpacer>3</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
       <Plasteel>50</Plasteel>
       <Uranium>20</Uranium>
       <Chemfuel>100</Chemfuel>
@@ -25,6 +25,7 @@
     <recipeMaker>
       <recipeUsers>
         <li>FabricationBench</li>
+        <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
       </recipeUsers>
     </recipeMaker>
     <comps>

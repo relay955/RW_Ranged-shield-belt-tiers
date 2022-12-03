@@ -30,8 +30,8 @@
       <Uranium>20</Uranium>
     </costList>
     <recipeMaker>
-      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedBattery</unfinishedThingDef>
+      <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>

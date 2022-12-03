@@ -30,7 +30,7 @@
       <Chemfuel>50</Chemfuel>
     </costList>
     <recipeMaker>
-      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedBattery</unfinishedThingDef>
       <researchPrerequisite>ShieldBelt</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>

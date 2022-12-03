@@ -11,7 +11,7 @@
       <EMPResist>12</EMPResist>
     </statBases>
     <costList>
-      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentSpacer>12</ComponentSpacer>
     </costList>
   </ThingDef>
 </Defs>
