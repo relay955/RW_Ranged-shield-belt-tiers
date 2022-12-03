@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="T2RangedShieldBelt" ParentName="RangedShieldBeltBase" >
-    <defName>Apparel_T2RangedShieldBelt</defName>
-    <label>T2 Ranged shield belt</label>
-    <description>Shield belt that improved performance over the earlier version.
-With the development of technology, the calculation system has been reduced in size and increased speed, and it is now possible to use a higher-power shield generator and battery.</description>
+  <ThingDef ParentName="RangedShieldBeltBase" >
+    <defName>Apparel_T2OCRangedShieldBelt</defName>
+    <label>T2 Overclock Ranged shield belt</label>
+    <description>Module equiped : [OverClock]</description>
     <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
     
     <statBases>
       <Mass>2.5</Mass>
       <WorkToMake>35000</WorkToMake>
-      <EnergyShieldRechargeRate>0.005</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>0.6</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.0075</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
       <HitRechargeCooldown>25</HitRechargeCooldown>
       <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
-      <ChargeDurationPerBattery>480</ChargeDurationPerBattery>
+      <ChargeDurationPerBattery>48</ChargeDurationPerBattery>
     </statBases>
     <costList>
       <ComponentSpacer>3</ComponentSpacer>
@@ -30,7 +29,7 @@ With the development of technology, the calculation system has been reduced in s
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>1</maxCharges>
+        <maxCharges>10</maxCharges>
         <ammoDef>AdvancedShieldBattery</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>

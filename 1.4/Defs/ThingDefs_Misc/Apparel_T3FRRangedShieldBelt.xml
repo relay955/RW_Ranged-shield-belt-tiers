@@ -1,43 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="RangedShieldBeltBase">
+  <ThingDef ParentName="T3RangedShieldBelt">
     <defName>Apparel_T3FastRangedShieldBelt</defName>
-    <label>T3F Ranged shield belt</label>
-    <description>A low-capacity, fast-charging version of the Ranged shield belt crafted with Gliterworld technology, ideal for repeated attacks and cover, or for long-term combat.</description>
-    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
+    <label>T3 FastRecharge Ranged shield belt</label>
+    <description>Module equiped : [Fast Recharge]</description>
 
     <statBases>
-      <Mass>3</Mass>
-      <WorkToMake>50000</WorkToMake>
-      <EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
-      <HitRechargeCooldown>8</HitRechargeCooldown>
-      <BrokenRechargeCooldown>15</BrokenRechargeCooldown>
-      <ChargeDurationPerBattery>240</ChargeDurationPerBattery>
+      <EnergyShieldRechargeRate>0.08</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>5</HitRechargeCooldown>
+      <BrokenRechargeCooldown>13</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>30</ChargeDurationPerBattery>
     </statBases>
     <costList>
-      <ComponentSpacer>10</ComponentSpacer>
-      <Plasteel>150</Plasteel>
-      <Uranium>80</Uranium>
-      <BroadshieldCore MayRequire="ludeon.rimworld.royalty">1</BroadshieldCore>
+      <ComponentSpacer>12</ComponentSpacer>
     </costList>
-    <recipeMaker>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
-    </recipeMaker>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>1</maxCharges>
-        <ammoDef>AdvancedShieldBattery</ammoDef>
-        <ammoCountToRefill>1</ammoCountToRefill>
-        <baseReloadTicks>60</baseReloadTicks>
-        <soundReload>Standard_Reload</soundReload>
-        <hotKey>Misc4</hotKey>
-        <chargeNoun>battery</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
   </ThingDef>
 </Defs>

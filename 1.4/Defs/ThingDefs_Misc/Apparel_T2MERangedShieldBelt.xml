@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2MERangedShieldBelt</defName>
+    <label>T2 MeleeSupport Ranged shield belt</label>
+    <description>Module equiped : [MElee]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.69</EnergyShieldEnergyMax>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-10</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

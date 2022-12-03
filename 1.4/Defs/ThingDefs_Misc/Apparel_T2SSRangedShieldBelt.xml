@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2SSRangedShieldBelt</defName>
+    <label>T2 Sharpshooter Ranged shield belt</label>
+    <description>Module equiped : [SharpShooter]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.69</EnergyShieldEnergyMax>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MeleeHitChance>-10</MeleeHitChance>
+      <MeleeDodgeChance>-0.2</MeleeDodgeChance>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

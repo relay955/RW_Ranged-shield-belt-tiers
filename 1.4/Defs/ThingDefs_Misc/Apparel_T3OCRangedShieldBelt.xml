@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="T3RangedShieldBelt" ParentName="RangedShieldBeltBase" >
-    <defName>Apparel_T3RangedShieldBelt</defName>
-    <label>T3 Ranged shield belt</label>
-    <description>Ranged shield belt crafted with Gliterworld technology, it provides a sufficient level of protection for the wearer in any situation.</description>
+  <ThingDef ParentName="RangedShieldBeltBase" >
+    <defName>Apparel_T3OCRangedShieldBelt</defName>
+    <label>T3 Overclock Ranged shield belt</label>
+    <description>Module equiped : [OverClock]</description>
 
     <statBases>
       <Mass>3</Mass>
       <WorkToMake>50000</WorkToMake>
-      <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.015</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2.4</EnergyShieldEnergyMax>
       <HitRechargeCooldown>20</HitRechargeCooldown>
       <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
-      <ChargeDurationPerBattery>240</ChargeDurationPerBattery>
+      <ChargeDurationPerBattery>24</ChargeDurationPerBattery>
     </statBases>
     <costList>
-      <ComponentSpacer>10</ComponentSpacer>
+      <ComponentSpacer>12</ComponentSpacer>
       <Plasteel>150</Plasteel>
       <Uranium>80</Uranium>
       <BroadshieldCore MayRequire="ludeon.rimworld.royalty">1</BroadshieldCore>
@@ -28,7 +28,7 @@
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>1</maxCharges>
+        <maxCharges>10</maxCharges>
         <ammoDef>AdvancedShieldBattery</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>
