@@ -20,8 +20,7 @@ With the development of technology, the calculation system has been reduced in s
     <costList>
       <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>50</Plasteel>
-      <Uranium>20</Uranium>
-      <Chemfuel>100</Chemfuel>
+      <Uranium>40</Uranium>
     </costList>
     <recipeMaker>
       <recipeUsers>

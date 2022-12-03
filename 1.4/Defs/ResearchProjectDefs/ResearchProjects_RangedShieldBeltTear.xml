@@ -14,8 +14,8 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-		<researchViewX>13.00</researchViewX>
-		<researchViewY>1.45</researchViewY>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>1.5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>

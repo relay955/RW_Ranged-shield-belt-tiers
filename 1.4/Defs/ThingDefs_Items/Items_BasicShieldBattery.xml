@@ -15,8 +15,8 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <intricate>true</intricate> <!-- Not returned to player when product made of this is smelted. -->
     <statBases>
+      <WorkToMake>600</WorkToMake>
       <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>50</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>2.0</Flammability>
       <DeteriorationRate>1.0</DeteriorationRate>
@@ -30,7 +30,6 @@
       <Chemfuel>50</Chemfuel>
     </costList>
     <recipeMaker>
-      <unfinishedThingDef>UnfinishedBattery</unfinishedThingDef>
       <researchPrerequisite>ShieldBelt</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>

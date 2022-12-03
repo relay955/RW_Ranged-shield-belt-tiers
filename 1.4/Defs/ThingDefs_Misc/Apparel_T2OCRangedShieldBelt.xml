@@ -19,8 +19,7 @@
     <costList>
       <ComponentSpacer>5</ComponentSpacer>
       <Plasteel>50</Plasteel>
-      <Uranium>20</Uranium>
-      <Chemfuel>100</Chemfuel>
+      <Uranium>40</Uranium>
     </costList>
     <recipeMaker>
       <recipeUsers>
