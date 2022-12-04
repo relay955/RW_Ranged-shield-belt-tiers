@@ -16,6 +16,8 @@
     <RechargeWaitTimeOnBrokenDescription>실드가 파괴되었을때 재충전 대기시간을 설정합니다. 기본값은 1배입니다. 배율을 낮게할수록 대기시간이 짧아집니다.</RechargeWaitTimeOnBrokenDescription>
     <AffectMeleeDamage>근접공격 보호</AffectMeleeDamage>
     <AffectMeleeDamageDescription>원거리 보호막 벨트가 근접공격을 보호할지를 설정합니다.</AffectMeleeDamageDescription>
+    <ShieldBatteryRequired>보호막 배터리 필요</ShieldBatteryRequired>
+    <ShieldBatteryRequiredDescription>보호막을 충전하는데 배터리가 필요한지의 여부를 결정합니다. 끄면 배터리를 소모하지 않습니다.</ShieldBatteryRequiredDescription>
     <ShieldEffect>실드 이펙트</ShieldEffect>
     <ShieldEffectDescription>실드의 외형을 설정합니다. 게임을 재시작해야 적용됩니다.</ShieldEffectDescription>
     <RoyaltyShield>로얄티 실드</RoyaltyShield>

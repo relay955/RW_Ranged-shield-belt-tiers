@@ -37,7 +37,8 @@ namespace RangedShieldBeltTiers
             Rect rect4 = rect2;
             rect4.yMin = rect2.y + rect2.height / 2f;
             float fillPercent = this.shield.Energy / this.shield.EnergyMax;
-            Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, false);
+            Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex,
+                           EmptyShieldBarTex, false);
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
             Rect rect5 = rect4;
@@ -55,10 +56,14 @@ namespace RangedShieldBeltTiers
                                  (int) (shield.ticksToReset * 0.016))+1);
                 labelText.Append("s)");
             }
-            labelText.Append("[");
-            labelText.Append((int)(shield.remainBatteryTick / 
-                             (double)shield.ChargeDurationPerBattery * 100));
-            labelText.Append("%]");
+            
+            if (RangedShieldBeltConfig.shieldBatteryRequired) {
+                labelText.Append("[");
+                labelText.Append((int)(shield.remainBatteryTick /
+                    (double)shield.ChargeDurationPerBattery * 100));
+                labelText.Append("%]");
+            }
+
             string label = labelText.ToString();
             
             Widgets.Label(rect5, label);

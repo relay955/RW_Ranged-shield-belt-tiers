@@ -15,6 +15,7 @@ namespace RangedShieldBeltTiers
         public static bool showShieldHitEffectOnly = true;
         public static bool showTacticalShieldBar = true;
         public static bool affectMeleeDamage = false;
+        public static bool shieldBatteryRequired = true;
         public static float shieldCapacityMultiplier = 1;
         public static float shieldRechargeSpeedMultiplier = 1;
         public static float rechargeWaitTimeOnHit = 1;
@@ -29,6 +30,8 @@ namespace RangedShieldBeltTiers
                 "showTacticalShieldBar");
             Scribe_Values.Look(ref affectMeleeDamage, 
                 "affectMeleeDamage");
+            Scribe_Values.Look(ref shieldBatteryRequired, 
+                "shieldBatteryRequired");
             Scribe_Values.Look(ref shieldCapacityMultiplier, 
                 "shieldCapacityMultiplier");
             Scribe_Values.Look(ref shieldRechargeSpeedMultiplier,
@@ -96,6 +99,9 @@ namespace RangedShieldBeltTiers
             
             listingStandard.CheckboxLabeled("AffectMeleeDamage".Translate(), ref RangedShieldBeltConfig.affectMeleeDamage,
                 "AffectMeleeDamageDescription".Translate());
+            
+            listingStandard.CheckboxLabeled("ShieldBatteryRequired".Translate(), ref RangedShieldBeltConfig.shieldBatteryRequired,
+                "ShieldBatteryRequiredDescription".Translate());
             
             listingStandard.Gap();
             listingStandard.Label("ShieldEffect".Translate(),-1F,"ShieldEffectDescription".Translate()); 

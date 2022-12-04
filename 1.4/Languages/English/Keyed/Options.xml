@@ -22,4 +22,6 @@
     <HexagonShieldDescription>Hexagon tile shield effect.</HexagonShieldDescription>
     <AffectMeleeDamage>protect against melee damage</AffectMeleeDamage>
     <AffectMeleeDamageDescription>Set whether to protect against melee attacks.</AffectMeleeDamageDescription>
+    <ShieldBatteryRequired>Shield battery required</ShieldBatteryRequired>
+    <ShieldBatteryRequiredDescription>Determines whether a battery is required to charge the shield. When turned off, it does not drain the battery.</ShieldBatteryRequiredDescription>
 </LanguageData>

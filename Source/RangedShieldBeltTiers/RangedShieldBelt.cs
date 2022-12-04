@@ -132,7 +132,7 @@ namespace RangedShieldBeltTiers
         if (ShieldState != ShieldState.Active) return;
         if ((double)energy < (double)EnergyMax) {
           energy += EnergyGainPerTick;
-          remainBatteryTick -= 1;
+          if(RangedShieldBeltConfig.shieldBatteryRequired) remainBatteryTick -= 1;
         } else {
           energy = EnergyMax;
         }
