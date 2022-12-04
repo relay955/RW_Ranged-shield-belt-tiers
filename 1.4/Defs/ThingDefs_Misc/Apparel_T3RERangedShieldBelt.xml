@@ -13,5 +13,8 @@
     <costList>
       <ComponentSpacer>12</ComponentSpacer>
     </costList>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

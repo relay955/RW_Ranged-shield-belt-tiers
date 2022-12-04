@@ -16,5 +16,8 @@
       <MoveSpeed>-1</MoveSpeed>
       <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
     </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

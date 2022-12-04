@@ -16,5 +16,8 @@
     <costList>
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

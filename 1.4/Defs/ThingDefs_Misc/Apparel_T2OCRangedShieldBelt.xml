@@ -25,7 +25,7 @@
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">

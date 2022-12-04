@@ -16,5 +16,8 @@
       <MeleeHitChance>-10</MeleeHitChance>
       <MeleeDodgeChance>-0.2</MeleeDodgeChance>
     </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

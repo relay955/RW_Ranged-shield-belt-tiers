@@ -16,5 +16,8 @@
       <MoveSpeed>-0.5</MoveSpeed>
       <WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
     </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

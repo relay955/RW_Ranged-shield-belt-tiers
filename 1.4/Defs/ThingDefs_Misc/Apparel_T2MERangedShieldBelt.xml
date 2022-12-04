@@ -15,5 +15,8 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-10</ShootingAccuracyPawn>
     </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
   </ThingDef>
 </Defs>

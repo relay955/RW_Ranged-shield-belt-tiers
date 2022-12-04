@@ -35,4 +35,38 @@
 		<researchViewX>20.00</researchViewX>
 		<researchViewY>1.15</researchViewY>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ShieldModularSystem</defName>
+		<label>Shield Modular System</label>
+		<description>Research how to mount modules on the shield.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedRangedShieldBelt</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>GlitertechShieldModularSystem</defName>
+		<label>Glitertech Shield Modular System</label>
+		<description>Research how to mount modules on the T3 shield.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedRangedShieldBelt</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>21.00</researchViewX>
+		<researchViewY>1.15</researchViewY>
+	</ResearchProjectDef>
 </Defs>
