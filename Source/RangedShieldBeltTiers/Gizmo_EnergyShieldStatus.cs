@@ -55,10 +55,8 @@ namespace RangedShieldBeltTiers
                 labelText.Append(Math.Max((int) (shield.ticksToRecharge * 0.016),
                                  (int) (shield.ticksToReset * 0.016))+1);
                 labelText.Append("s)");
-            }
-            
-            if (RangedShieldBeltConfig.shieldBatteryRequired) {
-                labelText.Append("[");
+            }else if (RangedShieldBeltConfig.shieldBatteryRequired) {
+                labelText.Append(" [");
                 labelText.Append((int)(shield.remainBatteryTick /
                     (double)shield.ChargeDurationPerBattery * 100));
                 labelText.Append("%]");
