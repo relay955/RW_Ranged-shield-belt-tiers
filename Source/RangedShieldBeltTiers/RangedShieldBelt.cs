@@ -32,10 +32,10 @@ namespace RangedShieldBeltTiers
     private Material EmptyShieldBar = null;
     private Material FullShieldBar = null;
     public int remainBatteryTick = 0;//1개의 배터리로 지속되는 남은 tick
-    private CompReloadable _compReloadable;
+    private CompApparelReloadable _compReloadable;
 
     public RangedShieldBelt() {
-      _compReloadable = this.TryGetComp<CompReloadable>();
+      _compReloadable = this.TryGetComp<CompApparelReloadable>();
     }
 
     public int HitRechargeCooldown => 
@@ -109,8 +109,8 @@ namespace RangedShieldBeltTiers
     {
       base.Tick();
       if (remainBatteryTick <= 0) {
-        var comp = this.TryGetComp<CompReloadable>();
-        if (!comp.CanBeUsed) return;
+        var comp = this.TryGetComp<CompApparelReloadable>();
+        if (!comp.CanBeUsed(out var reason)) return;
         remainBatteryTick = ChargeDurationPerBattery;
         comp.UsedOnce();
       }
@@ -181,7 +181,7 @@ namespace RangedShieldBeltTiers
 
     private void Break()
     {
-      SoundDefOf.EnergyShield_Broken
+      SoundDefOf.EnergyShield_Reset
         .PlayOneShot(new TargetInfo(Wearer.Position, Wearer.Map));
       FleckMaker.Static(Wearer.TrueCenter(), Wearer.Map, 
                         FleckDefOf.ExplosionFlash, 12f);

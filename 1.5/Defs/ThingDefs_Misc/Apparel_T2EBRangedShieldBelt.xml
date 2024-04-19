@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2EBRangedShieldBelt</defName>
+    <label>T2 ExtraBattery Ranged shield belt</label>
+    <description>Module equiped : [Extra Battery]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.9</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.0075</EnergyShieldRechargeRate>
+      <ChargeDurationPerBattery>360</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+      <WorkSpeedGlobal>-0.22</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

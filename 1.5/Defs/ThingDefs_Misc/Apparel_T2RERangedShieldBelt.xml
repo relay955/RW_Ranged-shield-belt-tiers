@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2RERangedShieldBelt</defName>
+    <label>T2 Reinforced Ranged shield belt</label>
+    <description>Module equiped : [Reinforce]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.40</EnergyShieldEnergyMax>
+      <Reinforce>10</Reinforce>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

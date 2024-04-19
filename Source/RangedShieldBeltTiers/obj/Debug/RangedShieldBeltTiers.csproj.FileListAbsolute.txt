@@ -17,3 +17,5 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\Sourc
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\Source\RangedShieldBeltTiers\obj\Debug\RangedShieldBeltTiers.csproj.CoreCompileInputs.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\Source\RangedShieldBeltTiers\obj\Debug\Ranged_Shield_Belt_Tiers.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\Source\RangedShieldBeltTiers\obj\Debug\Ranged_Shield_Belt_Tiers.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\1.5\Assemblies\Ranged_Shield_Belt_Tiers.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\RW_Ranged-shield-belt-tiers\1.5\Assemblies\Ranged_Shield_Belt_Tiers.pdb

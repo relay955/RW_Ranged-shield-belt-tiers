@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <StatDef>
+        <defName>HitRechargeCooldown</defName>
+        <label>Recharge waiting time on hit</label>
+        <description>waiting time until recharge starts after being attacked.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>FloatMaxOne</toStringStyle>
+        <formatString>{0}s</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>68</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.20</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>0.95</factorExcellent>
+                <factorMasterwork>0.9</factorMasterwork>
+                <factorLegendary>0.8</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+    <StatDef>
+        <defName>BrokenRechargeCooldown</defName>
+        <label>Recharge waiting time on broken</label>
+        <description>waiting time until recharge starts after the shield is destroyed.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>FloatMaxOne</toStringStyle>
+        <formatString>{0}s</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>67</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.20</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>1.00</factorExcellent>
+                <factorMasterwork>0.95</factorMasterwork>
+                <factorLegendary>0.9</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+    <StatDef>
+        <defName>ChargeDurationPerBattery</defName>
+        <label>Charge duration per battery</label>
+        <description>chargable duration per battery.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>FloatMaxOne</toStringStyle>
+        <formatString>{0}s</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>69</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.00</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>1.00</factorExcellent>
+                <factorMasterwork>1.00</factorMasterwork>
+                <factorLegendary>1.00</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+
+    <StatDef>
+        <defName>EMPResist</defName>
+        <label>EMP resistance</label>
+        <description>EMP resistance, the number is gain damage when hit EMP.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <formatString>{0}</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>69</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.20</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>1.00</factorExcellent>
+                <factorMasterwork>0.95</factorMasterwork>
+                <factorLegendary>0.9</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+    <StatDef>
+        <defName>Reinforce</defName>
+        <label>Reinforce</label>
+        <description>If shield take damage, won't take more than that amount of damage.</description>
+        <category>Apparel</category>
+        <minValue>0</minValue>
+        <toStringStyle>Integer</toStringStyle>
+        <formatString>{0}</formatString>
+        <showIfUndefined>false</showIfUndefined>
+        <displayPriorityInCategory>69</displayPriorityInCategory>
+        <parts>
+            <li Class="StatPart_Quality">
+                <factorAwful>1.20</factorAwful>
+                <factorPoor>1.00</factorPoor>
+                <factorNormal>1.00</factorNormal>
+                <factorGood>1.00</factorGood>
+                <factorExcellent>1.00</factorExcellent>
+                <factorMasterwork>0.95</factorMasterwork>
+                <factorLegendary>0.9</factorLegendary>
+            </li>
+        </parts>
+    </StatDef>
+
+
+</Defs>

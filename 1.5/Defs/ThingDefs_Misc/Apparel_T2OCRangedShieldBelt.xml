@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="RangedShieldBeltBase" >
+    <defName>Apparel_T2OCRangedShieldBelt</defName>
+    <label>T2 Overclock Ranged shield belt</label>
+    <description>Module equiped : [OverClock]</description>
+    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
+    
+    <statBases>
+      <Mass>2.5</Mass>
+      <WorkToMake>35000</WorkToMake>
+      <EnergyShieldRechargeRate>0.0075</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>25</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>48</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+      <Uranium>40</Uranium>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>AdvancedShieldBattery</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>battery</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

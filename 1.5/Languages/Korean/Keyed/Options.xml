@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <ShowShieldHitEffectOnly>피격시에만 실드 이펙트 표시</ShowShieldHitEffectOnly>
+    <ShowShieldHitEffectOnlyDescription>다른 게임의 보호막처럼 평상시에는 실드를 표시하지 않고 피격시에만 실드 효과를 표시합니다.</ShowShieldHitEffectOnlyDescription>
+    <ShowTacticalShieldBar>전술 실드바 UI 표시</ShowTacticalShieldBar>
+    <ShowTacticalShieldBarDescription>각 정착민의 머리 위에 표시되는 실드 잔량 UI를 켜고 끕니다.</ShowTacticalShieldBarDescription>
+    <BalanceSettings>밸런스 설정</BalanceSettings>
+    <BalanceSettingsDescription>Ranged shield belt tiers의 성능과 가격은 밸런스를 고려하여 디자인되었습니다. 그러나 많은 사람들은 이에 동의하지 않을 수 있습니다. 게임을 좀더 어렵게 하고 싶거나 쉽게 하고 싶은 경우, 아래의 배율을 수정하세요.</BalanceSettingsDescription>
+    <ShieldCapacityMultiplier>전역 실드용량 계수 : {0}배</ShieldCapacityMultiplier>
+    <ShieldCapacityMultiplierDescription>실드 용량을 설정합니다. 기본값은 1배입니다.</ShieldCapacityMultiplierDescription>
+    <ShieldRechargeSpeedMultiplier>전역 실드 충전속도 계수 : {0}배</ShieldRechargeSpeedMultiplier>
+    <ShieldRechargeSpeedMultiplierDescription>실드 충전속도를 설정합니다. 기본값은 1배입니다.</ShieldRechargeSpeedMultiplierDescription>
+    <RechargeWaitTimeOnHit>전역 피격 재충전 대기시간 계수 : {0}배</RechargeWaitTimeOnHit>
+    <RechargeWaitTimeOnHitDescription>피격시 재충전 대기시간을 설정합니다. 기본값은 1배입니다. 배율을 낮게할수록 대기시간이 짧아집니다.</RechargeWaitTimeOnHitDescription>
+    <RechargeWaitTimeOnBroken>전역 파괴시 재충전 대기시간 계수 : {0}배</RechargeWaitTimeOnBroken>
+    <RechargeWaitTimeOnBrokenDescription>실드가 파괴되었을때 재충전 대기시간을 설정합니다. 기본값은 1배입니다. 배율을 낮게할수록 대기시간이 짧아집니다.</RechargeWaitTimeOnBrokenDescription>
+    <AffectMeleeDamage>근접공격 보호</AffectMeleeDamage>
+    <AffectMeleeDamageDescription>원거리 보호막 벨트가 근접공격을 보호할지를 설정합니다.</AffectMeleeDamageDescription>
+    <ShieldBatteryRequired>보호막 배터리 필요</ShieldBatteryRequired>
+    <ShieldBatteryRequiredDescription>보호막을 충전하는데 배터리가 필요한지의 여부를 결정합니다. 끄면 배터리를 소모하지 않습니다.</ShieldBatteryRequiredDescription>
+    <ShieldEffect>실드 이펙트</ShieldEffect>
+    <ShieldEffectDescription>실드의 외형을 설정합니다. 게임을 재시작해야 적용됩니다.</ShieldEffectDescription>
+    <RoyaltyShield>로얄티 실드</RoyaltyShield>
+    <RoyaltyShieldDescription>로얄티 스타일의 실드 효과입니다.</RoyaltyShieldDescription>
+    <HexagonShield>헥사곤 실드</HexagonShield>
+    <HexagonShieldDescription>육각타일 실드 효과입니다.</HexagonShieldDescription>
+</LanguageData>

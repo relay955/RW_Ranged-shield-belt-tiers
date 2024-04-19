@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T3RangedShieldBelt">
+    <defName>Apparel_T3SSRangedShieldBelt</defName>
+    <label>T3SS Sharpshooter Ranged shield belt</label>
+    <description>Module equiped : [SharpShooter]</description>
+
+    <statBases>
+      <EnergyShieldEnergyMax>1.8</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.015</EnergyShieldRechargeRate>
+      <ChargeDurationPerBattery>180</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MeleeHitChance>-20</MeleeHitChance>
+      <MeleeDodgeChance>-0.2</MeleeDodgeChance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
