@@ -5,3 +5,4 @@ Source\
 dist.bat
 exclude.txt
 Folder.DotSettings.user
+*.pdb
