@@ -3,5 +3,5 @@
 Source\
 .idea\
 dist.bat
-exclude.bat
+exclude.txt
 Folder.DotSettings.user
