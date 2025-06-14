@@ -4,7 +4,7 @@
   <ThingDef ParentName="T2RangedShieldBelt">
     <defName>Apparel_T2ERRangedShieldBelt</defName>
     <label>T2 EMPResist Ranged shield belt</label>
-    <description>Module equiped : [EMP Resist]</description>
+    <description>A ranged shield belt equipped with an EMP resistance module. Only a limited amount of damage is taken from EMP attacks.</description>
     
     <statBases>
       <EnergyShieldEnergyMax>0.57</EnergyShieldEnergyMax>

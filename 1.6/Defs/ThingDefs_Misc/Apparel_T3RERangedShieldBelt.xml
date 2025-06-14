@@ -4,7 +4,7 @@
   <ThingDef ParentName="T3RangedShieldBelt">
     <defName>Apparel_T3RERangedShieldBelt</defName>
     <label>T3 Reinforced Ranged shield belt</label>
-    <description>Module equiped : [Reinforce]</description>
+    <description>A ranged shield belt equipped with a reinforcement module. It prevents taking more than a certain amount of damage at once, making it useful against weapons like charge lances.</description>
     
     <statBases>
       <EnergyShieldEnergyMax>0.80</EnergyShieldEnergyMax>

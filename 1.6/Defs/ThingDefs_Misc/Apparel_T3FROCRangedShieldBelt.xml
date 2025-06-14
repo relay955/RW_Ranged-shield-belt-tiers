@@ -4,7 +4,7 @@
   <ThingDef ParentName="RangedShieldBeltBase">
     <defName>Apparel_T3FROCRangedShieldBelt</defName>
     <label>T3 FastRecharge Overclock Ranged shield belt</label>
-    <description>Module equiped : [Fast Recharge, Over Clock]</description>
+    <description>A ranged shield belt equipped with both an overclocking module and a high-speed charging module. It offers ample shield capacity and extremely fast recharge at the cost of battery efficiency.</description>
 
     <statBases>
       <Mass>3</Mass>

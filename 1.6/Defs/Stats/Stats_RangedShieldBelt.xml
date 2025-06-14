@@ -95,8 +95,8 @@
 
     <StatDef>
         <defName>Reinforce</defName>
-        <label>Reinforce</label>
-        <description>If shield take damage, won't take more than that amount of damage.</description>
+        <label>Reinforcement</label>
+        <description>If shield takes damage, won't take more than that amount of damage.</description>
         <category>Apparel</category>
         <minValue>0</minValue>
         <toStringStyle>Integer</toStringStyle>

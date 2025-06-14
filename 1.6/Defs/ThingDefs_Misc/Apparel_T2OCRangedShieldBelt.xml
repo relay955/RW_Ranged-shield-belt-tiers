@@ -4,7 +4,7 @@
   <ThingDef ParentName="RangedShieldBeltBase" >
     <defName>Apparel_T2OCRangedShieldBelt</defName>
     <label>T2 Overclock Ranged shield belt</label>
-    <description>Module equiped : [OverClock]</description>
+    <description>A ranged shield belt equipped with an overclocking module. Its shield capacity and recharge rate are greatly enhanced, but at the cost of significantly reduced battery efficiency. Suitable for high-value personnel who must be protected at all costs, or when the colony can afford the expense.</description>
     <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
     
     <statBases>

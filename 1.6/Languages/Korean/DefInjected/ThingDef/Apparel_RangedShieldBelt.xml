@@ -4,19 +4,16 @@
   <Apparel_T1RangedShieldBelt.description>원시적인 사격 탄환출입 계산 시스템의 탑재로 원거리 무기를 사용하면서 동시에 보호막을 사용할 수 있습니다. \n그 댓가로 중량이 무거워지고 충분한 전력을 공급하지 못하게 되어 충전속도가 열화되었습니다. 하지만 그 유용성은 사라지지 않았습니다.</Apparel_T1RangedShieldBelt.description>
 
   <Apparel_T2RangedShieldBelt.label>T2 원거리 보호막 벨트</Apparel_T2RangedShieldBelt.label>
-  <Apparel_T2RangedShieldBelt.description>초기 버전보다 향상된 성능을 가진 보호막 벨트입니다. \n기술의 발전에 따라 계산장치가 소형화,고속화되었고 더 고출력의 보호막 발생장치와 축전지를 사용할 수 있게 되었습니다.</Apparel_T2RangedShieldBelt.description>
+  <Apparel_T2RangedShieldBelt.description>초기 버전보다 향상된 성능을 가진 보호막 벨트입니다. \n기술의 발전에 따라 계산장치가 소형화, 고속화되었고 더 고출력의 보호막 발생장치와 축전지를 사용할 수 있게 되었습니다.</Apparel_T2RangedShieldBelt.description>
 
   <Apparel_T2FRRangedShieldBelt.label>T2 고속충전 원거리 보호막 벨트</Apparel_T2FRRangedShieldBelt.label>
-  <Apparel_T2FRRangedShieldBelt.description>고속충전 모듈이 장착된 원거리 보호막 벨트입니다. 게릴라 전법을 주로 사용하는 경우 적합합니다.</Apparel_T2FRRangedShieldBelt.description>
+  <Apparel_T2FRRangedShieldBelt.description>고속충전 모듈이 장착된 원거리 보호막 벨트입니다. 공격과 엄폐를 반복하거나 장기적인 전투에 적합합니다.</Apparel_T2FRRangedShieldBelt.description>
 
   <Apparel_T2EBRangedShieldBelt.label>T2 외장배터리 원거리 보호막 벨트</Apparel_T2EBRangedShieldBelt.label>
   <Apparel_T2EBRangedShieldBelt.description>추가배터리 모듈이 장착된 원거리 보호막 벨트입니다. 배터리의 무게로 인해 이동속도와 작업속도가 약간 느려집니다. 전투를 전담하는 인원에게 적합합니다.</Apparel_T2EBRangedShieldBelt.description>
   
-  <Apparel_T2SSRangedShieldBelt.label>T2 저격수 원거리 보호막 벨트</Apparel_T2SSRangedShieldBelt.label>
-  <Apparel_T2SSRangedShieldBelt.description>저격수 모듈이 장착된 원거리 보호막 벨트입니다. 근거리 교전시에 불리합니다. 원거리무기를 사용하는 인원에게 적합합니다.</Apparel_T2SSRangedShieldBelt.description>
-
   <Apparel_T2ERRangedShieldBelt.label>T2 EMP저항 원거리 보호막 벨트</Apparel_T2ERRangedShieldBelt.label>
-  <Apparel_T2ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다. EMP 아군 오사때문에 스트레스를 받고있을때 적합합니다.</Apparel_T2ERRangedShieldBelt.description>
+  <Apparel_T2ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다.</Apparel_T2ERRangedShieldBelt.description>
 
   <Apparel_T2RERangedShieldBelt.label>T2 강화 원거리 보호막 벨트</Apparel_T2RERangedShieldBelt.label>
   <Apparel_T2RERangedShieldBelt.description>강화 모듈이 장착된 원거리 보호막 벨트입니다. 한번에 일정량 이상의 피해를 입지 않습니다. 전자기포와 같은 무기들을 상대할 때 유용합니다.</Apparel_T2RERangedShieldBelt.description>
@@ -33,9 +30,6 @@
   <Apparel_T3EBRangedShieldBelt.label>T3 외장배터리 원거리 보호막 벨트</Apparel_T3EBRangedShieldBelt.label>
   <Apparel_T3EBRangedShieldBelt.description>추가배터리 모듈이 장착된 원거리 보호막 벨트입니다. 배터리의 무게로 인해 이동속도와 작업속도가 크게 느려집니다. 전투를 전담하는 인원에게 적합합니다.</Apparel_T3EBRangedShieldBelt.description>
 
-  <Apparel_T3SSRangedShieldBelt.label>T3 저격수 원거리 보호막 벨트</Apparel_T3SSRangedShieldBelt.label>
-  <Apparel_T3SSRangedShieldBelt.description>저격수 모듈이 장착된 원거리 보호막 벨트입니다. 근거리 교전시에 불리합니다. 원거리무기를 사용하는 인원에게 적합합니다.</Apparel_T3SSRangedShieldBelt.description>
-
   <Apparel_T3OCRangedShieldBelt.label>T3 오버클럭 원거리 보호막 벨트</Apparel_T3OCRangedShieldBelt.label>
   <Apparel_T3OCRangedShieldBelt.description>오버클럭 모듈이 장착된 원거리 보호막 벨트입니다. 보호막 용량과 회복속도가 대폭 향상되었지만 그 댓가로 배터리 효율이 크게 하락했습니다. 더 많은 비용을 지불해서라도 보호해야 하는 중요한 인원이거나, 정착지에 재산이 많을때 적합합니다.</Apparel_T3OCRangedShieldBelt.description>
 
@@ -43,7 +37,7 @@
   <Apparel_T3FROCRangedShieldBelt.description>오버클럭 모듈과 고속충전 모듈이 장착된 원거리 보호막 벨트입니다. 배터리 효율을 댓가로 하여 충분한 보호막 용량, 매우 빠른 회복 속도를 갖추었습니다.</Apparel_T3FROCRangedShieldBelt.description>
   
   <Apparel_T3ERRangedShieldBelt.label>T3 EMP저항 원거리 보호막 벨트</Apparel_T3ERRangedShieldBelt.label>
-  <Apparel_T3ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다. EMP 아군 오사때문에 스트레스를 받고있을때 적합합니다.</Apparel_T3ERRangedShieldBelt.description>
+  <Apparel_T3ERRangedShieldBelt.description>EMP저항 모듈이 장착된 원거리 보호막 벨트입니다. EMP 공격으로부터 일정량의 피해만 입습니다.</Apparel_T3ERRangedShieldBelt.description>
 
   <Apparel_T3RERangedShieldBelt.label>T3 강화 원거리 보호막 벨트</Apparel_T3RERangedShieldBelt.label>
   <Apparel_T3RERangedShieldBelt.description>강화 모듈이 장착된 원거리 보호막 벨트입니다. 한번에 일정량 이상의 피해를 입지 않습니다. 전자기포와 같은 무기들을 상대할 때 유용합니다.</Apparel_T3RERangedShieldBelt.description>

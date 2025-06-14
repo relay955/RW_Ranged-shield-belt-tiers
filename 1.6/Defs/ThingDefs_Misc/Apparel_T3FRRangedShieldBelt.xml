@@ -4,7 +4,7 @@
   <ThingDef ParentName="T3RangedShieldBelt">
     <defName>Apparel_T3FastRangedShieldBelt</defName>
     <label>T3 FastRecharge Ranged shield belt</label>
-    <description>Module equiped : [Fast Recharge]</description>
+    <description>A ranged shield belt equipped with a high-speed charging module. Ideal for repeated engagements and prolonged battles.</description>
 
     <statBases>
       <EnergyShieldRechargeRate>0.08</EnergyShieldRechargeRate>
