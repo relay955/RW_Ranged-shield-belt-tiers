@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2ERRangedShieldBelt</defName>
+    <label>T2 EMPResist Ranged shield belt</label>
+    <description>Module equiped : [EMP Resist]</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>0.57</EnergyShieldEnergyMax>
+      <EMPResist>8</EMPResist>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

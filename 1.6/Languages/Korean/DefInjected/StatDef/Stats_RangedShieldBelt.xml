@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HitRechargeCooldown.label>피격시 재충전 대기시간</HitRechargeCooldown.label>
+  <HitRechargeCooldown.description>피격 후 재충전이 시작될 때 까지의 대기시간입니다.</HitRechargeCooldown.description>
+  <HitRechargeCooldown.formatString>{0}초</HitRechargeCooldown.formatString>
+
+  <BrokenRechargeCooldown.label>파괴시 재충전 대기시간</BrokenRechargeCooldown.label>
+  <BrokenRechargeCooldown.description>보호막이 파괴된 후 재충전이 시작될 때 까지의 대기시간입니다.</BrokenRechargeCooldown.description>
+  <BrokenRechargeCooldown.formatString>{0}초</BrokenRechargeCooldown.formatString>
+
+  <ChargeDurationPerBattery.label>배터리당 충전가능시간</ChargeDurationPerBattery.label>
+  <ChargeDurationPerBattery.description>보호막을 충전 가능한 배터리 당 시간입니다.</ChargeDurationPerBattery.description>
+  <ChargeDurationPerBattery.formatString>{0}초</ChargeDurationPerBattery.formatString>
+
+  <EMPResist.label>EMP 저항</EMPResist.label>
+  <EMPResist.description>EMP 공격을 받을 때 해당 수치만큼의 피해만 입습니다.</EMPResist.description>
+
+  <Reinforce.label>보호막 강화</Reinforce.label>
+  <Reinforce.description>한번 공격을 받을 때 해당 수치 이상의 피해를 입지 않습니다.</Reinforce.description>
+</LanguageData>

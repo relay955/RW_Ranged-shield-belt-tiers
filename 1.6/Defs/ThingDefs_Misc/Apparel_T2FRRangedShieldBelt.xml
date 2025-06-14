@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T2RangedShieldBelt">
+    <defName>Apparel_T2FRRangedShieldBelt</defName>
+    <label>T2 FastRecharge Ranged shield belt</label>
+    <description>Module equiped : [Fast Recharge]</description>
+    
+    <statBases>
+      <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>12</HitRechargeCooldown>
+      <BrokenRechargeCooldown>26</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>120</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

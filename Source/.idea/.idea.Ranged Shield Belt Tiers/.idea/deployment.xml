@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="개발서버">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../1.4" web="/" />
+            <mapping local="$PROJECT_DIR$/../1.5" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="앱서버">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../1.4" web="/" />
+            <mapping local="$PROJECT_DIR$/../1.5" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
