@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Configuration>
-  <Excluded>
-    <exclude>D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\.git</exclude>
-    <exclude>D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\.idea</exclude>
-    <exclude>D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Folder.DotSettings.user</exclude>
-    <exclude>D:\steam\steamapps\common\RimWorld\Mods\Ranged Shield Belt Tiers\Source</exclude>
-  </Excluded>
-</Configuration>

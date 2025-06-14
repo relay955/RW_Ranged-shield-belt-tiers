@@ -105,7 +105,7 @@ namespace RangedShieldBeltTiers
     public override float GetSpecialApparelScoreOffset() => 
       this.EnergyMax * this.ApparelScorePerEnergyMax;
 
-    public override void Tick()
+    protected override void Tick()
     {
       base.Tick();
       if (remainBatteryTick <= 0) {
@@ -181,8 +181,8 @@ namespace RangedShieldBeltTiers
 
     private void Break()
     {
-      SoundDefOf.EnergyShield_Reset
-        .PlayOneShot(new TargetInfo(Wearer.Position, Wearer.Map));
+        SoundDefOf.EnergyShield_AbsorbDamage
+            .PlayOneShot(new TargetInfo(Wearer.Position, Wearer.Map));
       FleckMaker.Static(Wearer.TrueCenter(), Wearer.Map, 
                         FleckDefOf.ExplosionFlash, 12f);
       for (int index = 0; index < 6; ++index)

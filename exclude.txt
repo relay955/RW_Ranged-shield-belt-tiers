@@ -1,0 +1,7 @@
+.git\
+.gitignore
+Source\
+.idea\
+dist.bat
+exclude.bat
+Folder.DotSettings.user
