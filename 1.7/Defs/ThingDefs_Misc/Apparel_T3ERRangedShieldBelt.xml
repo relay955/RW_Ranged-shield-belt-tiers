@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T3RangedShieldBelt">
+    <defName>Apparel_T3ERRangedShieldBelt</defName>
+    <label>T3 EMPResist Ranged shield belt</label>
+    <description>A ranged shield belt equipped with an EMP resistance module. Only a limited amount of damage is taken from EMP attacks.</description>
+    
+    <statBases>
+      <EnergyShieldEnergyMax>1.14</EnergyShieldEnergyMax>
+      <EMPResist>8</EMPResist>
+    </statBases>
+    <costList>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

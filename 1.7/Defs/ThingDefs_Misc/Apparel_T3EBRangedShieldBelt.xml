@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T3RangedShieldBelt">
+    <defName>Apparel_T3EBRangedShieldBelt</defName>
+    <label>T3 ExtraBattery Ranged shield belt</label>
+    <description>A ranged shield belt equipped with an additional battery module. The extra weight significantly reduces movement and work speed, making it suitable for dedicated combat personnel.</description>
+
+    <statBases>
+      <EnergyShieldEnergyMax>2.4</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <ChargeDurationPerBattery>120</ChargeDurationPerBattery>
+      <Mass>4</Mass>
+    </statBases>
+    <costList>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <equippedStatOffsets>
+      <MoveSpeed>-1</MoveSpeed>
+      <WorkSpeedGlobal>-0.6</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

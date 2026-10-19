@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="T2RangedShieldBelt" ParentName="RangedShieldBeltBase" >
+    <defName>Apparel_T2RangedShieldBelt</defName>
+    <label>T2 Ranged shield belt</label>
+    <description>Shield belt that improved performance over the earlier version.
+With the development of technology, the calculation system has been reduced in size and increased speed, and it is now possible to use a higher-power shield generator and battery.</description>
+    <thingClass>RangedShieldBeltTiers.RangedShieldBelt</thingClass>
+    
+    <statBases>
+      <Mass>2.5</Mass>
+      <WorkToMake>35000</WorkToMake>
+      <EnergyShieldRechargeRate>0.005</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.6</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>25</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>480</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+      <Uranium>40</Uranium>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>AdvancedRangedShieldBelt</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>1</maxCharges>
+        <ammoDef>AdvancedShieldBattery</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>battery</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

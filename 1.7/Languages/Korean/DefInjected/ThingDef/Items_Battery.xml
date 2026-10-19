@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BasicShieldBattery.label>보호막 배터리</BasicShieldBattery.label>
+  <BasicShieldBattery.description>보호막을 충전하기 위한 일회용 배터리입니다.</BasicShieldBattery.description>
+
+  <AdvancedShieldBattery.label>고급 보호막 배터리</AdvancedShieldBattery.label>
+  <AdvancedShieldBattery.description>보호막을 충전하기 위한 일회용 배터리입니다.</AdvancedShieldBattery.description>
+
+</LanguageData>

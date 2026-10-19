@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="T3RangedShieldBelt">
+    <defName>Apparel_T3FastRangedShieldBelt</defName>
+    <label>T3 FastRecharge Ranged shield belt</label>
+    <description>A ranged shield belt equipped with a high-speed charging module. Ideal for repeated engagements and prolonged battles.</description>
+
+    <statBases>
+      <EnergyShieldRechargeRate>0.08</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>5</HitRechargeCooldown>
+      <BrokenRechargeCooldown>13</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>30</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>GlitertechShieldModularSystem</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

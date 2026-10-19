@@ -1,3 +1,8 @@
 /Source/RangedShieldBeltTiers/obj/
 /Assemblies/
 AGENTS.md
+/Test/RunData/
+/Test/obj/
+/Test/bin/
+/rimworld-def-check.log*
+/1.7/Assemblies/*.pdb

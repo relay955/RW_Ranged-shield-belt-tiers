@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AdvancedRangedShieldBelt.label>향상된 원거리 보호막 벨트</AdvancedRangedShieldBelt.label>
+  <AdvancedRangedShieldBelt.description>더 향상된 원거리 보호막 벨트의 제조법을 배웁니다.</AdvancedRangedShieldBelt.description>
+
+  <GlitertechRangedShieldBelt.label>번화계 원거리 보호막 벨트</GlitertechRangedShieldBelt.label>
+  <GlitertechRangedShieldBelt.description>번화계 원거리 보호막 벨트의 제조법을 배웁니다.</GlitertechRangedShieldBelt.description>
+
+  <ShieldModularSystem.label>보호막 모듈 시스템</ShieldModularSystem.label>
+  <ShieldModularSystem.description>보호막에 추가모듈을 장착하는 방법을 배웁니다.</ShieldModularSystem.description>
+
+  <GlitertechShieldModularSystem.label>번화계 보호막 모듈 시스템</GlitertechShieldModularSystem.label>
+  <GlitertechShieldModularSystem.description>T3 보호막에 추가모듈을 장착하는 방법을 배웁니다.</GlitertechShieldModularSystem.description>
+</LanguageData>

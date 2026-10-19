@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="RangedShieldBeltBase">
+    <defName>Apparel_T1RangedShieldBelt</defName>
+    <label>T1 Ranged shield belt</label>
+    <description>by primitive shooting bullet entry and exit calculation system, can use a shield while using a ranged weapon at the same time.
+In return, it was heavy and did not provide enough power, which degraded charging speed.</description>
+    <statBases>
+      <Mass>4</Mass>
+      <WorkToMake>25000</WorkToMake>
+      <EnergyShieldRechargeRate>0.0025</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.3</EnergyShieldEnergyMax>
+      <HitRechargeCooldown>30</HitRechargeCooldown>
+      <BrokenRechargeCooldown>53</BrokenRechargeCooldown>
+      <ChargeDurationPerBattery>360</ChargeDurationPerBattery>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>30</Plasteel>
+      <Chemfuel>50</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>1</maxCharges>
+        <ammoDef>BasicShieldBattery</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>battery</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -6,3 +6,9 @@ dist.bat
 exclude.txt
 Folder.DotSettings.user
 *.pdb
+Test\
+test-defs.bat
+build.bat
+launch.bat
+AGENTS.md
+rimworld-def-check.log
